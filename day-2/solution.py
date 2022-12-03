@@ -3,36 +3,37 @@ with open("input.txt") as f:
 
 
 sign_score = {
-    'rock': 1,
-    'paper': 2,
-    'scissors': 3,
+    "rock": 1,
+    "paper": 2,
+    "scissors": 3,
 }
 
 fst_column_to_sign = {
-    'A': 'rock',
-    'B': 'paper',
-    'C': 'scissors',
+    "A": "rock",
+    "B": "paper",
+    "C": "scissors",
 }
 
 snd_column_to_sign = {
-    'X': 'rock',
-    'Y': 'paper',
-    'Z': 'scissors',
+    "X": "rock",
+    "Y": "paper",
+    "Z": "scissors",
 }
 
 snd_column_to_result = {
-    'X': 0,
-    'Y': 3,
-    'Z': 6,
+    "X": 0,
+    "Y": 3,
+    "Z": 6,
 }
 
 key_beats_value = {
-    'rock': 'scissors',
-    'paper': 'rock',
-    'scissors': 'paper',
+    "rock": "scissors",
+    "paper": "rock",
+    "scissors": "paper",
 }
 
 value_beats_key = dict((v, k) for k, v in key_beats_value.items())
+
 
 def part1(data: list[tuple[str, str]]) -> int:
     score = 0
